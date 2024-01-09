@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Lebanon</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    <header> <!-- header -->
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-md navbar-light bg-light  fixed-top " style="height: 80px; opacity: 0.6;">
+          <div class="container-fluid ">
+            <input type="image" src="C:\Users\MASTER\Documents\project3\imags\logo.webp" class="  rounded-circle mx-3 shadow" alt="pic" height="65px" width="65px">
+            <a class="navbar-brand text-info m-3" href="#" style="border-right:1px solid #ccc; padding-right: 10px; font-weight: bold;">Lebanon</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse show" id="navbarContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active text-defult" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-defult" href="#">Link </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <button class="nav-link dropdown-toggle text-defult border-2 border-warning rounded-3" href="#" id="nav-Dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Trips
+                  </button>
+                  <ul class="dropdown-menu mt-3 fade" aria-labelledby="nav-Dropdown">
+                    <li><a class="dropdown-item text-success" target="_blank" href="">Beirut</a></li>
+                    <li><a class="dropdown-item text-success" target="_blank" href="">Baalbek</a></li>
+                    <li><a class="dropdown-item text-success" target="_blank" href="">Bitrun</a></li>
+                    <li><a class="dropdown-item text-success" target="_blank" href="">Sidon</a></li>
+                    <li><a class="dropdown-item text-success" target="_blank" href="">Byblos</a></li>
+                    <li><a class="dropdown-item text-success" target="_blank" href="">Anjar</a></li>
+                    <li><a class="dropdown-item text-success" target="_blank" href="">MORE ...</a></li>
+  
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-defult">About us </a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control m-3 border-3 border-success rounded-3" type="search" placeholder="Search" aria-label="Search">
+  
+              </form>
+              <form class="d-flex">
+                <button class=" navbtn btn bg-success text-white me-3 border-3 border-success rounded-3 shadow-lg" type="submit">Search</button>
+                <button class="navbtn btn bg-success text-white border-3 border-success rounded-3 shadow-lg" type="button" data-bs-toggle="modal" data-bs-target="#myModal">Login</button>
+              </form> <!-- /form -->
+            </div> <!-- /navbar-collapse -->
+  
+          </div>
+        </nav>
+        <!-- /navbar -->
+    </header> 
+    <div class="modal fade" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-success">
+            <h5 class="modal-title text-light shadow-lg font-weight-bolder" id="staticBackdropLabel">Login</h5>
+            <button type="button" class="btn btn-close bg-light " data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- form -->
+            <form>
+              <div class="m-3">
+                <label class="form-label text-success">Email address</label>
+                <input type="email" class="form-control text-success border-3 border-success rounded-2" aria-describedby="emailHelp">
+                <p class="form-text text-secondary">We'll never share your email with anyone else.</p>
+              </div>
+              <div class="m-3">
+                <label class="form-label text-success">Password</label>
+                <input type="password" class="form-control text-success border-3 border-success rounded-2">
+              </div>
+              <div class="m-3 form-check">
+                <div class="form-check form-switch">
+                  <input class="form-check-input bg-success" type="checkbox" role="switch" checked="">
+                  <label class="form-check-label text-success" for="flexSwitchCheckChecked">Remmember me</label>
+                </div>
+              </div> <!-- /form check -->
+
+            </form>
+            <!-- /form -->
+            <div class="modal-footer d-flex  justify-content-between">
+              <button type="submit" class="btn btn-success text-light">Login</button>
+              <button type="button" class="btn btn-success text-light" data-bs-dismiss="modal">Close</button>
+            </div> <!-- /model-footer -->
+          </div> <!-- /model-body -->
+        </div> <!-- /modal-content -->
+      </div> <!-- /modal-dialog -->
+    </div>
+    <aside>
+      <div class="container-fluid p-0 " style="position: relative;">
+
+        <div class="d-flex flex-column justify-content-between ms-auto" style="position: fixed;z-index: 90;top: 200px;right:20px;">
+          <div class="aside-icon "><a href="#"><i class="fab fa-facebook-square"></i></a></div>
+          <div class="aside-icon "><a href="#"><i class="fab fa-whatsapp-square"></i></a></div>
+          <div class="aside-icon "><a href="#"><i class="fab fa-twitter-square"></i></a></div>
+          <div class="aside-icon "><a href="#"><i class="fab fa-linkedin"></i></a></div>
+          <div class="aside-icon "><a href="#"><i class="fab fa-instagram-square"></i></a></div>
+        </div>
+    </div></aside>
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators ">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="3" aria-label="Slide 4" class="active" aria-current="true"></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item">
+          <img src="C:\Users\MASTER\Documents\project3\imags\beirut 2.jpg" alt="beirut" class="d-block w-100" style="height: 550px;">
+          <div class="carousel-caption">
+            <h1>BEIRUT</h1>
+            <p>We had such a great time in Lebanon!</p>
+            <a href="#" class="btn btn-dark text-white text-shadow" target="_blank">Visit Us</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="C:\Users\MASTER\Documents\project3\imags\baablek.webp" alt="Baalbek" class="d-block w-100" style="height: 550px;">
+          <div class="carousel-caption">
+            <h1>BAABLEK</h1>
+            <p>Thank you, Baablek!</p>
+            <a href="#" class="btn btn-dark  text-white text-shadow" target="_blank">Visit Us</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="C:\Users\MASTER\Documents\project3\imags\bablos.webp" alt="Byblos" class="d-block w-100" style="height: 550px;">
+          <div class="carousel-caption">
+            <h1>BYBLOS</h1>
+            <p>We love this city!</p>
+            <a href="#" class="btn btn-dark text-white text-shadow" target="_blank">Visit Us</a>
+          </div>
+        </div>
+        <div class="carousel-item active">
+          <img src="C:\Users\MASTER\Documents\project3\imags\batron.webp" alt="Bitrun" class="d-block w-100" style="height: 550px;">
+          <div class="carousel-caption">
+            <h1>BITRUN</h1>
+            <p>We love this city!</p>
+            <a href="#" class="btn btn-dark  text-white text-shadow" target="_blank">Visit Us</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    </div>
+    <section class="cards">
+
+      <div class="card p-3  text-white shadow-lg" style="border-top-left-radius: 0; border-top-right-radius:0 ;background-color: rgb(158, 217, 219);">
+        <div class="card-body">
+          <h2 class="card-title title">Welcome</h2>
+          <p class="card-text">Are you planning to visit Lebanon? We offer the ultimate tour in Lebanon, covering Beirut,
+            Baablek. From a one day trip to a 10 day dream vacation, we will take care of all your needs. book hotels. 24/7
+            Customer Service. .</p>
+          <a href="#" class="btn btn-light text-success  btn-lg m-auto">Learn more</a>
+        </div>
+      </div>
+      <!-- /card -->
+      <hr>
+      <!-- collapse Accordion-->
+      <div class="mx-auto my-3 p-5  text-light text-center text-shadow rounded-3 shadow-lg " style="background-color: cadetblue;">
+        <h1>Popular destinations in Lebanon</h1>
+      </div>
+      <div class="accordion" id="accordioncollapse">
+        <div class="accordion-item">
+          <h2 class="accordion-header " id="head1">
+            <button class="accordion-button collapsed btn-outline-success text-success title shadow-lg " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="font-size: 20px;">
+              Bekaa city
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="head1" data-bs-parent="#accordioncollapse">
+            <div class="accordion-body border-info text-secondary">
+              Major tourist nestled between mountain ranges in Syria and Lebanon . Often the peaks are capped with snow and the result is breathtakingly beautiful scenes from the verdant valley below.
+               Roman ruins and charming little villages dot the landscape </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="head2">
+            <button class="accordion-button collapsed btn-outline-info text-info title shadow-lg " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              South Lebanon City
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="head2" data-bs-parent="#accordioncollapse">
+            <div class="accordion-body border-info text-secondary">
+              South Lebanon is a city located in Union, Hamilton and Deerfield Townships in central Warren County in the southwestern part of the U.S. state of Ohio.
+               South Lebanon's population was 6,384 at the 2020 U.S. Census and officially became a city on October 21
+              , 2021. South Lebanon was settled in 1795
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="head3">
+              <button class="accordion-button collapsed btn-outline-info text-info  shadow-lg title" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Akkar city
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="head3" data-bs-parent="#accordioncollapse">
+              <div class="accordion-body border-info text-secondary">
+                Akkar District is the only district in Akkar Governorate, Lebanon. It is coextensive with the governorate and covers an area of 788 km² (304 sq mi). The capital is at Halba. The district is characterized by the presence of a relatively large coastal plain, with high mountains to the east </div>
+            </div>
+          </div>
+
+          <!-- /collapse -->
+          <hr>
+          <div class="mx-auto mt-3 p-2  text-light text-center text-shadow rounded-3 shadow-lg " style="background-color: cadetblue;">
+            <h1>Translate From Arabic To English</h1>
+          </div>
+          <!-- card1 -->
+          <div class="card p-3  text-white shadow-lg" style="border-top-left-radius: 0; border-top-right-radius:0 ;background-color: rgb(158, 217, 219);">
+            <div class="card-body">
+              <h4 class="card-title ">ًWrite and Translate <a href="https://translate.google.com.eg/?hl=en" target="_blank" rel="noopener">Press Here</a></h4>
+              <button class="btn btn-light text-success border border-2 btntranslate .btntranslate::before .btntranslate::after shadow-lg " onclick="copyToClipboard('sentence')" id="btnCopy" style="font-size: 18px;">
+                Copy
+              </button>
+              <br>
+              <textarea id="sentence" class="form-control mx-auto mt-3" rows="5" placeholder="translate:" name="text"></textarea>
+            </div>
+          </div>
+          <!-- /card1 -->
+          <hr>
+          <div class="mx-auto mt-3 p-2  text-light text-center text-shadow rounded-3 shadow-lg " style="background-color: cadetblue;">
+            <h1>Translate From Arabic To Frensh</h1>
+          </div>
+          <!-- card2 -->
+          <div class="card p-3  text-white shadow-lg" style="border-top-left-radius: 0; border-top-right-radius:0 ;background-color: rgb(158, 217, 219);">
+            <div class="card-body">
+              <h4 class="card-title ">ًWrite and Translate <a href="https://translate.google.com.eg/?hl=en&amp;sl=ar&amp;tl=fr&amp;op=translate" target="_blank" rel="noopener">Press Here</a></h4>
+              <button class="btn btn-light text-success border border-2 btntranslate .btntranslate::before .btntranslate::after shadow-lg" onclick="copyToClipboard('sentence')" id="btncopy" style="font-size: 18px;">
+                Copy
+              </button>
+              <br>
+              <textarea id="sentence" class="form-control mx-auto mt-3" rows="5" placeholder="translate:" name="text"></textarea>
+            </div>
+          </div>
+          <!-- /card2 -->
+          <hr>
+          <div class="mx-auto mt-3 p-2  text-light text-center text-shadow rounded-3 shadow-lg " style="background-color: cadetblue;">
+            <h1>Translate From Arabic To German</h1>
+          </div>
+          <!-- card3 -->
+          <div class="card p-3  text-white shadow-lg" style="border-top-left-radius: 0; border-top-right-radius:0 ;background-color: rgb(158, 217, 219);">
+            <div class="card-body">
+              <h4 class="card-title ">ًWrite and Translate <a href="https://translate.google.com.eg/?hl=en&amp;sl=ar&amp;tl=de&amp;op=translate" target="_blank" rel="noopener">Press Here</a></h4>
+              <button class="btn btn-light text-success border border-2 btntranslate .btntranslate::before .btntranslate::after shadow-lg" onclick="copyToClipboard('sentence')" id="btncopy" style="font-size: 18px;">
+                Copy
+              </button>
+              <br>
+              <textarea id="sentence" class="form-control mx-auto mt-3" rows="5" placeholder="translate:" name="text"></textarea>
+            </div>
+          </div>
+          <!-- /card3 -->
+
+    </div></div></section> 
+    <div class="fixed-img fixed-image1"></div>
+    <hr class="my-4">
+    <section class="tours">
+      <div class="mx-auto mb-3 p-3  text-light text-center text-shadow rounded-3 shadow-lg " style="background-color: rgb(105, 187, 189);">
+        <h1 class="title" style="font-size: 40px;">Popular destinations in Lebanon</h1>
+      </div>
+      <div class="container-fluid">
+        <div class="row justify-content-around pb-5 ">
+          <!-- beirut card -->
+          <div class="card cardover bg-light text-success col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+            <input type="image" src="imags/berut.webp" class="card-img-top shadow w-100" alt=" pic">
+            <div class="card-body">
+              <h5 class="card-title">BEIRUT</h5>
+              <p class="card-text">Capital of Lebanon</p>
+              <button class="btn btn-success text-light mx-auto d-block">Know More</button>
+            </div>
+          </div>
+          <!-- /beirut  card -->
+          <!-- baalbek card -->
+          <div class="card cardover bg-light text-success col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+            <input type="image" src="imags/dddd.avif" class="card-img-top shadow" alt=" pic">
+            <div class="card-body">
+              <h5 class="card-title">BAALBEK</h5>
+              <p class="card-text">The most famous temples </p>
+              <button class="btn btn-success text-light mx-auto d-block">Know More</button>
+            </div>
+          </div>
+          <!-- /baalbek card -->
+          <!-- SIDON card -->
+          <div class="card cardover bg-light text-success col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+            <input type="image" src="imags/BBB.webp" class="card-img-top shadow" alt=" pic">
+            <div class="card-body">
+              <h5 class="card-title">SIDON</h5>
+              <p class="card-text">the third largest lebanese city</p>
+              <button class="btn btn-success text-light mx-auto d-block">Know More</button>
+            </div>
+          </div>
+          <!-- /sidon card -->
+          <!-- anjar card -->
+          <div class="card cardover bg-light text-success col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+            <input type="image" src="imags/anjar.jpg" class="card-img-top shadow" alt=" pic">
+            <div class="card-body">
+              <h5 class="card-title">ANJAR</h5>
+              <p class="card-text">it is called moses' monsters</p>
+              <button class="btn btn-success text-light mx-auto d-block">Know More</button>
+            </div>
+          </div>
+          <!-- /Anjar card -->
+          <!-- byblos card -->
+          <div class="card cardover bg-light text-success col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+            <input type="image" src="imags/bablos.webp" class="card-img-top shadow" alt=" pic">
+            <div class="card-body">
+              <h5 class="card-title">Byblos</h5>
+              <p class="card-text">one of the oldest inhabited cities the world </p>
+              <button class="btn btn-success text-light mx-auto d-block">Know More</button>
+            </div>
+          </div>
+          <!-- /byblos card -->
+          <!-- beit ayoub card -->
+          <div class="card cardover bg-light text-success col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+            <input type="image" src="imags/beit.webp" class="card-img-top shadow" alt=" pic">
+            <div class="card-body">
+              <h5 class="card-title">BEIT AYOUB</h5>
+              <p class="card-text">it was known by this name after the first man to live there</p>
+              <button class="btn btn-success text-light mx-auto d-block">Know More</button>
+            </div>
+          </div>
+          <!-- /beit ayoub card -->
+          <!-- zgharta card -->
+          <div class="card cardover bg-light text-success col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+            <input type="image" src="imags/ffffg.webp" class="card-img-top shadow" alt=" pic">
+            <div class="card-body">
+              <h5 class="card-title">ZGHARTA</h5>
+              <p class="card-text">coastal city</p>
+              <button class="btn btn-success text-light mx-auto d-block">Know More</button>
+            </div>
+          </div>
+          <!-- /zgharta card -->
+          <!--betroun  card -->
+          <div class="card cardover bg-light text-success col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow">
+            <input type="image" src="imags/berut.webp" class="card-img-top shadow" alt=" pic">
+            <div class="card-body">
+              <h5 class="card-title">BETROUN</h5>
+              <p class="card-text">Tourist city </p>
+              <button class="btn btn-success text-light mx-auto d-block">Know More</button>
+            </div>
+          </div>
+          <!-- /betroun card -->
+        </div> <!-- /row cards -->
+      </div> <!-- /container -->
+    </section>
+    <div class="fixed-img fixed-image2"></div>
+    <hr class="my-4"> 
+    <div class="card p-3  text-white shadow-lg" style="background-color: rgb(158, 217, 219);">
+      <h2 class="text-center text-light m-3 title" style="font-size: 40px;">Thanks For</h2>
+    </div>
+    <section class="wrapper">
+      <div class="container" style="width: 100%; min-height: 500px;">
+
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+            <div class="card card-hover text-white card-has-bg click-col thankcard" style="background-image:url('imags/man1.jpg');">
+              <img class="card-img d-none" src="imags/man1.jpg" alt="All thanks and appreciation">
+              <div class="card-img-overlay d-flex flex-column">
+                <div class="card-body">
+
+                  <h4 class="card-title mt-0 "><a class="text-white" herf="#">All thanks and appreciation</a></h4>
+                  <small><i class="far fa-clock"></i> October 15, 2020</small>
+                </div>
+                <div class="card-footer">
+                  <div class="media">
+                    <img class="mr-3 rounded-circle" src="imags/man1.jpg" alt="Generic placeholder image" style="width:100px">
+                    <div class="media-body">
+                      <h6 class="my-0 text-white d-block">ُEng. Mohammed Ismail "som3a :)"</h6>
+                      <small>Director of UI/UX</small>
+                    </div>
+                  </div>
+                </div> <!-- card-footer-->
+          </div> <!-- /card-img-overlay -->
+              </div> <!-- /card -->
+            </div> <!-- /card3 -->
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-4 card3">
+            <div class="card card-hover text-white card-has-bg click-col thankcard" style="background-image:url('imags/woman1.jpg');">
+              <img class="card-img d-none" src="imags/woman1.jpg" alt="All thanks and appreciation">
+              <div class="card-img-overlay d-flex flex-column">
+                <div class="card-body">
+
+                  <h4 class="card-title mt-0 "><a class="text-white" herf="#">All thanks and appreciation</a></h4>
+                  <small><i class="far fa-clock"></i> October 15, 2020</small>
+                </div>
+                <div class="card-footer">
+                  <div class="media">
+                    <img class="mr-3 rounded-circle" src="imags/woman1.jpg" alt="Generic placeholder image" style="width:100px">
+                    <div class="media-body">
+                      <h6 class="my-0 text-white d-block">Eng. omnia mohammed</h6>
+                      <small>Director of UI/UX</small>
+                    </div>
+                  </div>
+                </div> <!-- card-footer -->
+              </div> <!-- /card-img-overlay -->
+            </div> <!-- /card -->
+          </div> <!-- /card3 -->
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-4 card3">
+            <div class="card card-hover text-white card-has-bg click-col thankcard" style="background-image:url('imags/woman2.jpg');">
+              <img class="card-img d-none" src="imags/woman2.jpg" alt="All thanks and appreciation">
+              <div class="card-img-overlay d-flex flex-column">
+                <div class="card-body">
+
+                  <h4 class="card-title mt-0 "><a class="text-white" herf="#">All thanks and appreciation</a></h4>
+                  <small><i class="far fa-clock"></i> October 15, 2020</small>
+                </div>
+                <div class="card-footer">
+                  <div class="media">
+                    <img class="mr-3 rounded-circle" src="imags/woman2.jpg" alt="Generic placeholder image" style="width:100px">
+                    <div class="media-body">
+                      <h6 class="my-0 text-white d-block">ُMai Mohammed Salah</h6>
+                      <small> frontend develepor </small>
+                    </div>
+                  </div>
+                </div> <!-- card-footer -->
+              </div> <!-- /card-img-overlay -->
+            </div> <!-- /card -->
+          </div> <!-- /card3 -->
+
+        </div> <!-- /row -->
+
+      </div>
+    </section>
+    <hr class="my-4">
+    <section class="container light"> <!-- postcards news -->
+      <div class="container py-2">
+        <div class="h1 text-center  title" id="pageHeaderTitle" style="font-size: 30px;">LABANON NEWS</div>
+
+        <article class="postcard d-flex light blue"> <!-- 1st card -->
+          <a class="postcard__img_link" href="#">
+            <img class="postcard__img" src="C:\Users\MASTER\Documents\project3\imags\NEWS1.avif" alt="Image Title">
+          </a>
+          <div class="postcard__text t-dark">
+            <h1 class="postcard__title blue"><a href="#">Podcast Title</a></h1>
+            <div class="postcard__subtitle small">
+              <time datetime="2020-05-25 12:00:00">
+                <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+              </time>
+            </div>
+            <div class="postcard__bar"></div>
+            <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat
+              asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo
+              accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo
+              iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+            <ul class="postcard__tagbox">
+              <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+              <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+              <li class="tag__item play blue">
+                <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
+              </li>
+            </ul>
+          </div>
+        </article> <!-- /1st card -->
+        <article class="postcard d-flex light red"> <!-- 2nd card -->
+          <a class="postcard__img_link" href="#">
+            <img class="postcard__img" src="imags/NEWS 2.jpg" alt="Image Title">
+          </a>
+          <div class="postcard__text t-dark">
+            <h1 class="postcard__title red"><a href="#">Podcast Title</a></h1>
+            <div class="postcard__subtitle small">
+              <time datetime="2020-05-25 12:00:00">
+                <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+              </time>
+            </div>
+            <div class="postcard__bar"></div>
+            <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat
+              asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo
+              accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo
+              iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+            <ul class="postcard__tagbox">
+              <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+              <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+              <li class="tag__item play red">
+                <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
+              </li>
+            </ul>
+          </div>
+        </article> <!-- /2nd card -->
+        <article class="postcard d-flex  light green"> <!-- 3rd card -->
+          <a class="postcard__img_link" href="#">
+            <img class="postcard__img" src="imags/NEWS3.avif" alt="Image Title">
+          </a>
+          <div class="postcard__text t-dark">
+            <h1 class="postcard__title green"><a href="#">Podcast Title</a></h1>
+            <div class="postcard__subtitle small">
+              <time datetime="2020-05-25 12:00:00">
+                <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+              </time>
+            </div>
+            <div class="postcard__bar"></div>
+            <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat
+              asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo
+              accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo
+              iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+            <ul class="postcard__tagbox">
+              <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+              <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+              <li class="tag__item play green">
+                <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
+              </li>
+            </ul>
+          </div>
+        </article> <!-- /3rd card -->
+        <article class="postcard d-flex light yellow "> <!-- 4th card -->
+          <a class="postcard__img_link" href="#">
+            <img class="postcard__img" src="imags/NEWS4.avif" alt="Image Title">
+          </a>
+          <div class="postcard__text t-dark">
+            <h1 class="postcard__title yellow"><a href="#">Podcast Title</a></h1>
+            <div class="postcard__subtitle small">
+              <time datetime="2020-05-25 12:00:00">
+                <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+              </time>
+            </div>
+            <div class="postcard__bar"></div>
+            <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat
+              asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo
+              accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo
+              iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+            <ul class="postcard__tagbox">
+              <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+              <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+              <li class="tag__item play yellow">
+                <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
+              </li>
+            </ul>
+          </div>
+        </article> <!-- /4th card -->
+      </div> <!-- /container -->
+    </section>
+    <h2 class="text-center text-light title" style="font-size: 30px;">Join Us</h2>
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="card m-3 bg-light " style="width: 250px; box-shadow: -5px -5px 20px 10px rgb(198, 241, 230);">
+          <div class="card-body text-success d-flex flex-column text-center">
+            <h3 class="card-title mb-4">Subscribe Now
+            </h3>
+            <input class="logoicon mb-2 rounded-4" style="align-self: center;" src="imags/TWETTER.avif" type="image" alt="icon">
+            <a href="#" target="_blank" class="card-link h4 text-success  ">Go to link</a>
+          </div>
+        </div>
+        <div class="card m-3 bg-light " style="width: 250px; box-shadow: -5px -5px 20px 10px rgb(198, 241, 230);">
+          <div class="card-body text-success d-flex flex-column text-center">
+            <h3 class="card-title mb-4">Follow
+            </h3>
+            <input class="logoicon mb-2 rounded-4" style="align-self: center;" src="imags/WHATSAPP.avif" type="image" alt="icon">
+            <a href="" target="_blank" class="card-link h4 text-success ">Go to link</a>
+          </div>
+        </div>
+        <div class="card m-3 bg-light " style="width: 250px;  box-shadow: -5px -5px 20px 10px rgb(198, 241,230)">
+          <div class="card-body text-success d-flex flex-column text-center">
+            <h3 class="card-title mb-4">Like the page
+            </h3>
+            <input class="logoicon mb-2 rounded-4" style="align-self: center;" src="imags/linkedin.avif" type="image" alt="icon">
+            <a href="" target="_blank" class="card-link h4 text-success ">Go to link</a>
+          </div>
+        </div>
+        <div class="card m-3 bg-light " style="width: 250px; box-shadow: -5px -5px 20px 10px rgb(198, 241, 230)">
+          <div class="card-body text-success d-flex flex-column text-center">
+            <h3 class="card-title mb-4">watch vedios
+            </h3>
+            <input class="logoicon mb-2 rounded-4" style="align-self: center;" src="imags/insta.avif" type="image" alt="icon">
+            <a href="" target="_blank" class="card-link h4 text-success ">Go to link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class=" text-scess pb-5 bg-muted">
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <hr class=" border-top border-3 border-light my-3">
+            <h5><img src="C:\Users\MASTER\Documents\project3\imags\logo.webp" alt="good pic" class="logoicon rounded-circle">&nbsp; Good Company</h5>
+            <hr class="border-top border-3 border-light my-3">
+            <address>
+              <p>Tel : 000-000-000</p>
+              <p>Address : LEBANON</p>
+              <p>Fax : 000-000-000</p>
+            </address>
+          </div>
+          <div class="col-md-4">
+            <hr class="border-top border-3 border-light my-3">
+            <h5><img src="C:\Users\MASTER\Documents\project3\imags\logo.webp" alt="good pic" class="logoicon rounded-circle ">&nbsp; Important links</h5>
+            <hr class="border-top border-3 border-light my-3">
+            <p><a href="#">Visit Us</a></p>
+            <p><a href="#">Take alook</a></p>
+            <p><a href="#">Your health is more important</a></p>
+          </div>
+          <div class="col-md-4">
+            <hr class="border-top border-3 border-light my-3">
+            <h5><img src="C:\Users\MASTER\Documents\project3\imags\logo.webp" alt="good pic" class="logoicon rounded-circle">&nbsp; Vision</h5>
+            <hr class="border-top border-3 border-light my-3">
+            <p>Serveices for all </p>
+            <p>Provide best serveices</p>
+            <p>you will be better than before</p>
+          </div>
+        </div>
+      </div>
+      <hr class="border-top border-3 border-light my-3">
+      <span class="text-center d-block title">Copyright © 2020 ShimaaHussien El Said, Good Company. All
+        rights</span>
+      <hr class="border-top border-3 border-light my-3">
+      <!-- /footer -->
+      <!-- js -->
+    <!-- Latest compiled JavaScript -->
+<script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+        </script>
+        <script type-text="javascript">
+          function copyToClipboard(id) {
+                  var from = document.getElementById(id);
+                  var range = document.createRange();
+                  window.getSelection().removeAllRanges();
+                  range.selectNode(from);
+                  window.getSelection().addRange(range);
+                  document.execCommand('copy');
+                  window.getSelection().removeAllRanges();
+                  window.alert("تم نسخ النص.");
+           }
+          </script>
+          
+    
+  
+  
+</footer>
+</body>
+</html>
